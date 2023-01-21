@@ -1,6 +1,2 @@
-# repo 1
- aprendendo essa bagaça
-
- Repositório criando durante o curso do Git e GitHub do Guanabara
-
-Dando commit no GitHub web
+# Curso Web
+Repositório onde posto os avanços durante o curso de desenvolvimento web.

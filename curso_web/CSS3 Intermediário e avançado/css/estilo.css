@@ -24,16 +24,50 @@ p a {
 }
 #pagina p{
     color: red;
-} */
+}
 * {
     color: red;
 }
-h2 {/*3*/
+h2 {/*3
     color: blue;
 }
-h2.verde {/*2*/
+h2.verde {/*2
     color: green;
 }
-h2#amarelo {/*1*/
+h2#amarelo {/*1
     color: yellow;
+}
+
+---------------------------Navegação vertical--------------------*/
+/*
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    padding: 5px 20px;
+    background: url(../imagens/seta.png) no-repeat left center;
+}
+*/
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+ul a {
+    /*border: 1px solid red;*/
+    width: 200px;
+    height: 40px;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    text-indent: 50px;
+    line-height: 40px;
+    background: url(../imagens/menu.png) no-repeat left bottom;
+}
+
+a:hover {
+    background-position: right bottom;
+    color: #fff;
 }

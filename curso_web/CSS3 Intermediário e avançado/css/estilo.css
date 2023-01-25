@@ -1,6 +1,8 @@
-*/* {
+/*
+-------------------------Seletores--------------------------
+* {
     border: 1px solid red;
-}*/
+}
 h1 {
     color: green;
 }
@@ -13,4 +15,25 @@ li>a {
 }
 p a {
     color: green;
+}
+
+----------------Herança e especificidade------------------ */
+/*
+#pagina p{
+    color: blue !important;
+}
+#pagina p{
+    color: red;
+} */
+* {
+    color: red;
+}
+h2 {/*3*/
+    color: blue;
+}
+h2.verde {/*2*/
+    color: green;
+}
+h2#amarelo {/*1*/
+    color: yellow;
 }

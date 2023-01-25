@@ -72,9 +72,7 @@ a:hover {
     background-color: #f99200;
     color: #fff;
 }
-#home #navegacao .home a,
-#sobre #navegacao .sobre a,
-#trabalho #navegacao .trabalho a {
+#home .home a {
     background-position: right bottom;
     background-color: #f99200;
     color: #fff;

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script>
+        /*
+        //true && true && true = true ----- Se uma for falsa o retorno será falso
+        if(2 == 2 && 3 >= 1 && 'a' == 'a') {
+            document.write('Verdadeiro')
+        }
+        else {
+            document.write('Falso')
+        }
+        document.write ('<hr /><br />')
+
+        //true || true || false = true --- Só se todas forem falsas o retorno será falso
+        if(2 == 2 || 3 >= 1 || 'a' == 'b') {
+            document.write('Verdadeiro')
+        }
+        else {
+            document.write('Falso')
+        }
+        document.write ('<hr /><br />')
+
+        //false = true ------ Ele inverte o resultado de comparação
+        if(!(4 == 2)) {
+            document.write('Verdadeiro')
+        }
+        else {
+            document.write('Falso')
+        }
+        document.write ('<hr /><br />')
+        */
+        
+        var nota = prompt('Digite a nota do aluno: ')
+        var faltas = prompt('Digite a quantidade de faltas do aluno: ')
+
+        var media = 7
+        var faltasmax = 15
+        /*
+        if(nota >= media && faltas <= faltasmax) {
+            document.write('Aprovado')
+            //lógica
+        }
+        else {
+            document.write('Reprovado')
+            //lógica
+        } */
+
+        var resultado = (nota >= media && faltas <= faltasmax) ? 'Aprovado' : 'Reprovado'
+        document.write(resultado)
+        //Enxuta operações
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

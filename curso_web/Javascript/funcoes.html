@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>
 
+        //void
+        //retorno
+        
+        var largura = prompt('Digite a largura do terreno (em metros): ')
+        var comprimento = prompt('Digite o comprimento do terreno (em metros): ')
+        
+        var area = calcularAreaTerreno(largura, comprimento)
+        
+        document.write('O terreno possui ' +area+ ' metros quadrados')
+
         function calcularAreaTerreno (largura, comprimento) {
 
             //lógica
@@ -13,11 +23,7 @@
             
             return area
         }
-
-            var largura = prompt('Digite a largura do terreno (em metros): ')
-            var comprimento = prompt('Digite o comprimento do terreno (em metros): ')
-            var area = calcularAreaTerreno(largura, comprimento)
-            document.write('O terreno possui ' +area+ ' metros quadrados')
+       
             
     </script>
     <title>Javascript</title>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - Teclado</title>
+    <script>
+
+        function acao1() {
+            alert('Teclou')
+        }
+    </script>
+</head>
+<body>
+    <input onkeyup="acao1()" type="text" />
+    <p>O digito aparece antes do alerta</p>
+    <br><hr>
+    <input onkeydown="acao1()" type="text" />
+    <p>O digito aparece depois do alerta</p>
+    <br><hr>
+    <input onkeypress="acao1()" type="text" />
+    <p>O digito aparece depois do alerta, mas apenas para teclas que inserem digitos</p>
+    <br><hr>
+</body>
+</html>

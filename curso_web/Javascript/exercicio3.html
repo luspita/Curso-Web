@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        /*
+        var num1 = prompt('Digite um número');
+        var operacao = prompt('Deseja somar ou subtrair?');
+        var num2 = prompt('Digite outro número');
+
+        function calc(num1, num2, operacao){
+
+        num1 = parseFloat(num1);
+        num2 = parseFloat(num2);
+
+        var resultado = 0;
+
+        if(operacao == 'somar'){
+        resultado = num1 + num2;
+        }
+
+        if(operacao == 'subtrair'){
+        resultado = num1 - num2;
+        }
+
+        return resultado;
+        }
+
+        document.write('O resultado é: ' + calc(num1, num2, operacao))
+        */
+        
+        var num1 = Number(prompt('Insira um número:'))
+        var operacao = prompt('Deseja somar, subtrair, multiplicar ou dividir?')
+        var num2 = Number(prompt('Insira mais um número:'))
+
+        var somar = function (num1, num2) {
+            soma = num1 + num2
+            return soma
+        }
+        var subtrair = function(num1, num2) {
+            subtracao = num1 - num2
+            return subtracao
+        }
+        var multiplicar = function(num1, num2) {
+            produto = num1 * num2
+            return produto
+        }
+        var dividir = function(num1, num2) {
+            divisao = num1 / num2
+            return divisao
+        }
+
+        function calculo(somar, subtrair, multiplicar, dividir) {
+            if (operacao == "somar") {
+                somar(num1, num2)
+                document.write('A soma entre ' +num1+ ' e ' +num2+ ' é: ' +soma)
+            
+            }
+            else if (operacao == "subtrair") {
+                subtrair(num1, num2)
+                document.write('A subtração entre ' +num1+ ' e ' +num2+ ' é: ' +subtracao)
+            }
+            else if (operacao == "multiplicar") {
+                multiplicar(num1, num2)
+                document.write('O produto entre ' +num1+ ' e ' +num2+ ' é: ' +produto)
+            } 
+            else if (operacao == "dividir") {
+                dividir(num1, num2)
+                document.write('A divisão entre ' +num1+ ' e ' +num2+ ' é: ' +divisao)
+            }       
+           
+        }    
+
+        calculo(somar, subtrair, multiplicar, dividir)
+        
+    </script>
+    <title>Exercício 3 Javascript</title>
+</head>
+<body>
+    
+</body>
+</html>

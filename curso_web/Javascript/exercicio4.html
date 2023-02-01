@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4 - Javascript</title>
+    <style>
+    
+        .amarelo {
+            background-color: #FFFF00;
+        }
+        
+        .vermelho {
+            background-color: #FF0000;
+        }
+        
+        .verde {
+            background-color: #1aff1a;
+        }
+    
+    </style>
+    
+    <script>
+        function mudaEstilo() {
+            document.getElementById('campo').className = 'amarelo'
+        }
+        
+        
+        function mantemEstilo() {
+            var caracter = document.getElementById('campo').value
+        
+            if (caracter.length < 3) {
+                document.getElementById('campo').className = 'vermelho'
+            } else {
+                document.getElementById('campo').className = 'verde'
+            }
+        }
+    </script>
+ 
+</head>
+ 
+<body>
+    
+    <span>Digite algo: </span>
+    
+    <input id="campo"
+    type="text"
+    onfocus="mudaEstilo()"
+    onblur="mantemEstilo()"
+    />
+
+</body> 
+</html>  

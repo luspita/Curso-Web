@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For each - Javascript</title>
+    <script>
+
+        //for each só percorre indices partindo de 0, nada a mais
+        //var listaFuncionarios = ['Luiz', 'Alisson', 'Vitor', 'João', 'Herica']
+        var listaFuncionarios = Array()
+        listaFuncionarios['x'] = 'Viviane'
+        listaFuncionarios[false] = 'Rosângela'
+        listaFuncionarios[3] = 'Miguel'
+        listaFuncionarios[27] = 'Lucas'
+        listaFuncionarios[-12] = 'Fernanda'
+        //forEach começa a partir de 0 (cuidado!!!)
+
+        
+        var f = function(valor, indice) {
+            console.log(valor, indice)
+        }
+        listaFuncionarios.forEach(f)
+        
+        
+        /*
+        console.log(listaFuncionarios)
+        document.write(listaFuncionarios[4])
+        
+        listaFuncionarios.forEach(function(valor, indice, array) {
+            //lógica
+            console.log('Índice: ' + indice + ' | Valor: ' + valor)
+            
+            if(valor == 'Herica') {
+                array[indice] = 'Um novo valor'
+            }
+        })
+        console.log(listaFuncionarios)
+        document.write('<br />' + listaFuncionarios[4])
+        */
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

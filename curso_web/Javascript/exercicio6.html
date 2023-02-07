@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For each - Javascript</title>
+    <script>
+
+        var listaNomes = Array()
+        
+        listaNomes[0] = 'Luiz'
+        listaNomes[1] = 'Alisson'
+        listaNomes[2] = 'Vitor'
+        listaNomes[3] = 'João'
+        listaNomes[4] = 'Herica'
+
+        for (var x = 0; x < listaNomes.length; x++) {
+
+        document.write(listaNomes[x] + '<br />')
+       
+        console.log(listaNomes[x])
+        }
+        
+        //Acima está o exercício 1
+        document.write('<br /> <br /> <hr />')
+        //Abaixo está o exercício 2
+        
+        var x = 1
+        var y = 1
+       
+        while (x <= 10) {
+            y = 1
+                while (y <= 10) {
+                    console.log(x + ' x ' + y + ' = ' + x * y + ' | ')
+                    document.write(x + ' x ' + y + ' = ' + x * y + ' | ')
+                    y++
+                }
+        
+            console.log("\n")
+        document.write("<hr/>")
+        x++;
+        }
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

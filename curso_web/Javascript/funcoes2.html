@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>
 
+        /*
         function soma(a, b) {
         //b = b === undefined  ? 0 : b
         return a + b
@@ -15,6 +16,16 @@
         console.log(soma (7, 7, 9, 15)) //desconsidera parâmetros adicionais
         console.log(soma(7))
         console.log(soma())
+        */
+        function soma() {
+            var resultado = 0
+            for(var i in arguments) {
+                resultado += arguments[i]                
+            }
+            return resultado
+        }
+
+        console.log(soma(7, 5, 3.2, 0.8, 'Texto'))
     </script>
     <title>Funções 2 Javascript</title>
 </head>

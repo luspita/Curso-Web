@@ -4,9 +4,11 @@ body {
 }
 
 #container {
-    width: 720px;
+    width: 85%;
     margin: 0 auto;
     background: #fff;
+    min-width: 720px;
+    max-width: 1280px;
 }
 
 #marca {
@@ -17,17 +19,17 @@ body {
 }
 
 #conteudo {
-    width: 520px;
+    width: 75%; /*520px -> 74.28%*/
     float: right;
 }
 
 #conteudo_principal {
-    width: 320px;
+    width: 64%; /*320px -> 64%*/
     float: left;
 }
 
 #conteudo_secundario {
-    width: 180px;
+    width: 32%; /*180px -> 36%*/
     float: right;
     background: #d1d1d1;
 }
@@ -42,7 +44,7 @@ body {
 
 #navegacao {
     float: left;
-    width: 180px;
+    width: 23%; /*180px -> 25.71%*/
     padding-top: 20px;
     padding-bottom: 20px;
     background: #d1d1d1;

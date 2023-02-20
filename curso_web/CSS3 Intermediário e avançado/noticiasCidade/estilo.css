@@ -26,6 +26,14 @@ body {
 }
 
 /*--------------Barra de navegação--------------*/
+a:link, a:visited {
+    color: #b10333;
+    padding: 2px;
+}
+
+a:hover {
+    color: #e50040;
+}
 
 ul {
     margin: 0;
@@ -63,7 +71,7 @@ ul {
 
 body.home #navegacao a#home,
 body.brasil #navegacao a#brasil,
-body.internacional #navegacao a#internacional
+body.internacional #navegacao a#internacional,
 body.fotos #navegacao a#fotos {
     color: #fff;
     background: #de003e;
@@ -79,38 +87,87 @@ body.fotos #navegacao a#fotos {
 #lateral {
     width: 180px;
     margin: 0 0 20px -750px;
-    background: yellow;
     float: left;
 }
 
-#tresColunas #primario {
+#primario {
     width: 270px;
     margin: 0 0 20px 195px;
-    background: blue;
     float: left;
 }
 
 #duasColunas #primario {
     width: 555px;
-    margin: 0 0 20px 195px;
-    background: blue;
-    float: left;
 }
 
 #umaColuna #primario {
     width: 750px;
     margin: 0 0 20px 0;
-    background: blue;
-    float: left;
 }
 
 #secundario {
     width: 270px;
     margin: 0 0 20px 15px;
-    background: green;
     float: left;
 }
 
+/*---------Formatando imagens----------*/
+
+img.imagemPrincipal {
+    width: 98%;
+    border: 3px solid #dfdfdf;
+}
+
+/*---------Formatando cabeçalhos----------*/
+
+h3 {
+    text-transform: uppercase;
+    display: inline;
+    font-size: 0.8em;
+    padding: 3px;
+}
+
+.destaque h3 {
+    background: #b10333;
+    color: #fff;
+}
+
+.entrevista h3 {
+    background: #de003e;
+}
+
+/*---------Formatando lista de notícias----------*/
+
+#listaNoticias li {
+    padding: 2px;
+    border-bottom: 1px solid #ccc;
+    height: 62px;
+}
+
+#listaNoticias li a img {
+    float: left;
+    margin: 5px;
+}
+
+#listaNoticias li a {
+    text-decoration: none;
+}
+
+#listaNoticias li a h3 {
+    font-size: 0.8em;
+    padding: 0;
+    color: #3e7ab9;
+}
+
+#listaNoticias li a p {
+    font-size: 0.7em;
+    color: #000
+}
+
+#listaNoticias li:hover {
+    background: #eee;
+    cursor: pointer;
+}
 /*---------Rodapé----------*/
 
 #conteudo-rodape {
@@ -118,6 +175,64 @@ body.fotos #navegacao a#fotos {
     padding: 20px;
 }
 
+.caixa {
+    margin: 10px 0;
+    padding: 5px;
+    background: #f3f3f3 url(fundo-caixa.png);
+}
+
+h2 {
+    font-size: 1em;
+    padding: 5px;
+    background: #294c71;
+    color: #fff;
+}
+
+.caixaConteudo {
+    background: #fff;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+/*------Formatar menus laterais-------*/
+
+#lateral ul a {
+    font-size: 0.9em;
+    padding: 3px;
+    display: block;
+    line-height: 30px;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+#lateral ul a:hover {
+    background: #f9f9f9 url(marcador.png) no-repeat left center;
+    padding-left: 20px;
+    color: #a1a1a1;
+}
+
+/*-------------Formatando formulário--------------*/
+
+label {
+    display: block;
+    cursor: pointer;
+}
+
+input {
+    padding: 5px;
+    width: 125px;
+    font-size: 0.9em;
+    background-color: #fff;
+}
+
+input.submit {
+    width: 80px;
+    color: #fff;
+    background-color: #b10333;
+    border: 2px solid #870529;
+}
+/*-----------Formatando rodapé------------*/
 #rodape {
     width: 750px;
     margin: 0 auto;

@@ -22,20 +22,51 @@
             */
         }
         .item {
-            width: 100px;
+            /*width: 200px;*/
             height: 100px;
             margin: 10px;
             background: white;
             border: 1px solid gray;
+            /*Define a proporção de espaço ocupado por um item*/
+            flex-grow: 0;
+            /*Define a proporção de redução de tamanho ocupado por um item*/
+            flex-shrink: 0;
+            /*Indica o tamanho inicial do flex antes da distribuição do espaço restante*/
+            flex-basis: 100px;
         }
+        .item1 {
+            flex-grow: 1;
+            /*flex-shrink: 3;*/
+        }
+        .item2 {
+            flex-grow: 3;
+            /*flex-shrink: 7;*/
+        }
+        /*
+        .ordem1 {
+            order: 1;
+        }
+        .ordem2 {
+            order: 2;
+        }
+        .ordem3 {
+            order: 3;
+        }
+        .ordem4 {
+            order: 4;
+        }
+        .ordem {
+            order: -1;
+        }
+        */
     </style>
 </head>
 <body>
     <h1>Flexbox</h1>
     <div id="conteudo">
-        <div class="item">01</div>
-        <div class="item">02</div>
-        <div class="item">03</div>
+        <div class="item item1">01</div>
+        <div class="item item2">02</div>
+        <div class="item item2">03</div>
         <div class="item">04</div>
     </div>
 </body>

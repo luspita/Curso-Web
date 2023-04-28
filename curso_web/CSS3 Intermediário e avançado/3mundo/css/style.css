@@ -1,0 +1,23 @@
+/* --------- Estrutura do site --------- */
+body {
+  background: #f4f2ec repeat-x;
+  font: 12px "Lucida Grande", "Lucida Sans Unicode", "Arial", sans-serif;
+}
+header {
+  background: #d8975e repeat-x;
+}
+
+#conteiner {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* ---------- Logo ---------- */
+#logo a {
+  width: 248px;
+  height: 50px;
+  text-indent: -20px;
+  text-align: justify;
+  text-decoration: none;
+  display: block;
+}
